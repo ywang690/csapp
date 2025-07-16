@@ -1,0 +1,6 @@
+D:\!Platform\AutoFW\AutoTestPlan\JUICL\JUICL\bin\Debug\JUICL.dll
+D:\!Platform\AutoFW\AutoTestPlan\JUICL\JUICL\bin\Debug\JUICL.pdb
+D:\!Platform\AutoFW\AutoTestPlan\JUICL\JUICL\obj\Debug\JUICL.csproj.AssemblyReference.cache
+D:\!Platform\AutoFW\AutoTestPlan\JUICL\JUICL\obj\Debug\JUICL.csproj.CoreCompileInputs.cache
+D:\!Platform\AutoFW\AutoTestPlan\JUICL\JUICL\obj\Debug\JUICL.dll
+D:\!Platform\AutoFW\AutoTestPlan\JUICL\JUICL\obj\Debug\JUICL.pdb
