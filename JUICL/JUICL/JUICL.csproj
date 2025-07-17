@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="CLArray.cs" />
     <Compile Include="CLBitConverter.cs" />
+    <Compile Include="CLConvert.cs" />
     <Compile Include="CLDecimal.cs" />
     <Compile Include="CLDelegate.cs" />
     <Compile Include="CLDir.cs" />
@@ -55,7 +56,9 @@
     <Compile Include="CLInt16.cs" />
     <Compile Include="CLThread.cs" />
     <Compile Include="CLTuple.cs" />
-    <Compile Include="CSString.cs" />
+    <Compile Include="CLString.cs" />
+    <Compile Include="CLParseTPTandChenTech_Log.cs" />
+    <Compile Include="CLList.cs" />
     <Compile Include="UICL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
