@@ -71,7 +71,7 @@ namespace JUICL
             return _result;
         }
         //Find
-        public bool _Add()
+        public bool _Find()
         {
             bool _result = false;
             return _result;

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace JUICL
 {
-    internal class CLString
+    public class CLString
     {
         //        Clone
         //        Compare
@@ -267,10 +267,15 @@ namespace JUICL
             return _result;
         }
         //ToString
-        public bool _ToString()
+        public string _ToString(Int16 _input)
         {
-            bool _result = false;
-            return _result;
+            string _output = _input.ToString();
+            return _output;
+        }
+        public string _ToStringHex(Int16 _input)
+        {
+            string _output = _input.ToString("X");
+            return _output;
         }
         //ToUpper
         public bool _ToUpper()

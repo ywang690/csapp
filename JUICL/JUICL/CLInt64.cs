@@ -17,6 +17,11 @@ namespace JUICL
         }
         //        Abs
         //        Clamp
+        public bool _Clamp()
+        {
+            bool _result = false;
+            return _result;
+        }
         //CompareTo
         //CopySign
         //CreateChecked
