@@ -51,6 +51,16 @@ namespace JUICL
         }
         #endregion
 
+        public byte[] _stringToByte(string[] input, int Len)
+        {
+            byte[] buf = new byte[Len];
+            for (int i = 0; i < Len; i++)
+            {
+                buf[i] = Convert.ToByte(input[i]);
+            }
+            return buf;
+        }
+
 
     }
 }

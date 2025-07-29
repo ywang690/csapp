@@ -8,23 +8,79 @@ namespace JUICL
 {
     public class CLConvert
     {
+        //ChangeType
         public bool _ChangeType()
         {
             bool _result = false;
             return _result;
         }
-        //ChangeType
+
         //FromBase64CharArray
+        public bool _FromBase64CharArray()
+        {
+            bool _result = false;
+            return _result;
+        }
         //FromBase64String
+        public bool _FromBase64String()
+        {
+            bool _result = false;
+            return _result;
+        }
         //FromHexString
+        public bool _FromHexString()
+        {
+            bool _result = false;
+            return _result;
+        }
         //GetTypeCode
+        public bool _GetTypeCode()
+        {
+            bool _result = false;
+            return _result;
+        }
         //IsDBNull
+        public bool _IsDBNull()
+        {
+            bool _result = false;
+            return _result;
+        }
         //ToBase64CharArray
+        public bool _ToBase64CharArray()
+        {
+            bool _result = false;
+            return _result;
+        }
         //ToBase64String
+        public bool _ToBase64String()
+        {
+            bool _result = false;
+            return _result;
+        }
         //ToBoolean
+        public bool _ToBoolean()
+        {
+            bool _result = false;
+            return _result;
+        }
         //ToByte
+        public bool _ToByte()
+        {
+            bool _result = false;
+            return _result;
+        }
         //ToChar
+        public bool _ToChar()
+        {
+            bool _result = false;
+            return _result;
+        }
         //ToDateTime
+        public bool _ToDateTime()
+        {
+            bool _result = false;
+            return _result;
+        }
         //ToDecimal
         public bool _ToDecimal()
         {
