@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CDBCF3B0-A335-4B19-8CF6-690F37B0FF52}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JUICL</RootNamespace>
+    <AssemblyName>JUICL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoftdoc\CLArray.cs" />
+    <Compile Include="Microsoftdoc\CLBitConverter.cs" />
+    <Compile Include="Microsoftdoc\CLConvert.cs" />
+    <Compile Include="Microsoftdoc\CLDecimal.cs" />
+    <Compile Include="Microsoftdoc\CLDelegate.cs" />
+    <Compile Include="Microsoftdoc\CLDir.cs" />
+    <Compile Include="Microsoftdoc\CLFile.cs" />
+    <Compile Include="Microsoftdoc\CLSemaphore.cs" />
+    <Compile Include="Microsoftdoc\CLSpinLock.cs" />
+    <Compile Include="Microsoftdoc\CLTask.cs" />
+    <Compile Include="Microsoftdoc\CLDirInfo.cs" />
+    <Compile Include="Microsoftdoc\CLInt16.cs" />
+    <Compile Include="Microsoftdoc\CLThread.cs" />
+    <Compile Include="Microsoftdoc\CLTuple.cs" />
+    <Compile Include="Microsoftdoc\CLString.cs" />
+    <Compile Include="WProjects.cs" />
+    <Compile Include="Microsoftdoc\CLList.cs" />
+    <Compile Include="UICL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
