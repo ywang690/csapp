@@ -61,6 +61,29 @@ namespace JUICL
             return buf;
         }
 
+        public List<double[]> Parse(string filePath, int skipLines)
+        {   
+            var lines = File.ReadAllLines(filePath);
+
+            var result = new List<double[]>();
+            //還沒去除標頭
+
+            foreach (var line in lines.Skip(skipLines))
+            {
+                if (string.IsNullOrWhiteSpace(line)) continue;
+
+                var fields = line.Split(',');
+                int fieldsCnt = fields.Length;
+                    var nums = fields
+                        .Where(f => !string.IsNullOrWhiteSpace(f))
+                        .Select(f => double.Parse(f.Trim()))
+                        .ToArray();
+
+                    result.Add(nums);
+            }
+
+            return result;
+        }
 
     }
 }

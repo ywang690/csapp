@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace JUICL
 {
@@ -67,5 +68,33 @@ namespace JUICL
             _result = true;
             return _result;
         }
+
+        public byte[] DecToAscii(string Input)
+        {
+            byte[] _dataAscii = new byte[2];
+
+            ASCIIEncoding ascii = new ASCIIEncoding();
+            Byte[] bytes = ascii.GetBytes(Input);
+
+            foreach (byte _data in bytes)
+            {
+                Console.WriteLine(_data);
+            }
+
+            return _dataAscii;
+        }
+
+        public string AppliedOpenFileDialog(string title = "選擇檔案", string filter = "All files (*.*)|*.*")
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Title = title;
+            dialog.Filter = filter;
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                return dialog.FileName;
+            }
+            return null;
+        }
+
     }
 }
